@@ -72,7 +72,7 @@ export default function Page() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4">
       <h1 className="text-2xl font-bold text-center mb-6" style={{ color: '#2a2420' }}>
-        从夯到拉锐评《基督山伯爵》中所有人物
+        从夯到拉锐评25中所有老师
       </h1>
 
       <div className="rounded-lg overflow-hidden border" style={{ borderColor: '#d8cfbe' }}>
