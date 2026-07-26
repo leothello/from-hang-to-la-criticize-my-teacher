@@ -1,5 +1,5 @@
 export const metadata = {
-  title: '从夯到拉锐评《基督山伯爵》中所有人物',
+  title: '从夯到拉锐评25中所有老师',
 }
 
 export default function RootLayout({ children }) {
