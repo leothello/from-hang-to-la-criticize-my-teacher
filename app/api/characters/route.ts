@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { readDB, writeDB, uid, computeTier, photoByteSize, MAX_PHOTO_BYTES, MAX_BIO_LEN } from '@/lib/kv'
+import { readDB, writeDB, uid, computeTier, photoByteSize, MAX_PHOTO_BYTES, MAX_BIO_LEN } from '../../../lib/kv'
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url)
