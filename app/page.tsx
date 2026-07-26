@@ -292,7 +292,7 @@ function DetailModal({ userId, initial, onClose, onChanged, onError }) {
   const currentPhoto = sortedPhotos[photoIdx] || null
   const currentBio = sortedBios[bioIdx] || null
 
-  async function act(type, payload) {
+  async function act(type, payload = {}) {
     const res = await fetch('/api/characters/action', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -364,7 +364,7 @@ function DetailModal({ userId, initial, onClose, onChanged, onError }) {
 
   async function handleDeleteOrHide() {
     const type = c.isMine ? 'delete' : 'hide'
-    const data = await act(type)
+    const data = await act(type, {})
     if (data) {
       onChanged()
       onClose()
