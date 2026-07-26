@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { readDB, writeDB, uid, evictIfNeeded, photoByteSize, MAX_PHOTO_BYTES, MAX_BIO_LEN, MAX_WITHDRAW } from '@/lib/kv'
+import { readDB, writeDB, uid, evictIfNeeded, photoByteSize, MAX_PHOTO_BYTES, MAX_BIO_LEN, MAX_WITHDRAW } from '../../../../lib/kv'
 
 export async function POST(req) {
   const body = await req.json()
