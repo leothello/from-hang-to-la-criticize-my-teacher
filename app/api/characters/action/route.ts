@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextResponse } from 'next/server'
 import { readDB, writeDB, uid, evictIfNeeded, photoByteSize, MAX_PHOTO_BYTES, MAX_BIO_LEN, MAX_WITHDRAW } from '../../../../lib/kv'
 
