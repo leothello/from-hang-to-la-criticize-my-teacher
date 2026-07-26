@@ -12,7 +12,7 @@ export const uid = () => Math.random().toString(36).slice(2, 10)
 
 export async function readDB() {
   const data = await kv.get(KEY)
-  return data || { characters: [] }
+  return (data || { characters: [] }) as any
 }
 
 export async function writeDB(db) {
