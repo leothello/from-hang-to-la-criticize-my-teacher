@@ -1,22 +1,16 @@
-{
-  "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [{ "name": "next" }],
-    "baseUrl": ".",
-    "paths": { "@/*": ["./*"] }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+export const metadata = {
+  title: '从夯到拉锐评《基督山伯爵》中所有人物',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="zh-CN">
+      <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body style={{ backgroundColor: '#efe8dc' }} className="min-h-screen">
+        {children}
+      </body>
+    </html>
+  )
 }
