@@ -185,7 +185,7 @@ function NoticeModal({ onClose }) {
           服务器性能垃圾，进入如果看不到内容请稍候片刻（片刻？）。
           进行交互（上传，点赞…）可能遇到延迟，请静静等待不要重复操作。
           谢谢使用，有问题，建议，诉求请联系作者，邮箱：leothellogracive@gmail.com
-          另外的，已上传的非老师人物将于之后不久删除。
+          。       另外的，已上传的非老师人物将于之后不久删除。
         </p>
         <button
           onClick={onClose}
